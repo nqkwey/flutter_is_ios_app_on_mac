@@ -1,0 +1,38 @@
+name: flutter_is_ios_app_on_mac
+description: Check if this is an iOS app executed on a mac
+version: 1.0.0
+homepage: https://github.com/MatthiasKi/flutter_is_ios_app_on_mac
+
+environment:
+  sdk: '>=2.18.4 <3.0.0'
+  flutter: ">=2.5.0"
+
+dependencies:
+  flutter:
+    sdk: flutter
+  flutter_web_plugins:
+    sdk: flutter
+  plugin_platform_interface: ^2.0.2
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+  flutter_lints: ^2.0.0
+
+flutter:
+  plugin:
+    platforms:
+      android:
+        package: com.kisselindustries.flutterisiosapponmac.flutter_is_ios_app_on_mac
+        pluginClass: FlutterIsIosAppOnMacPlugin
+      ios:
+        pluginClass: FlutterIsIosAppOnMacPlugin
+      linux:
+        pluginClass: FlutterIsIosAppOnMacPlugin
+      macos:
+        pluginClass: FlutterIsIosAppOnMacPlugin
+      windows:
+        pluginClass: FlutterIsIosAppOnMacPluginCApi
+      web:
+        pluginClass: FlutterIsIosAppOnMacWeb
+        fileName: flutter_is_ios_app_on_mac_web.dart
