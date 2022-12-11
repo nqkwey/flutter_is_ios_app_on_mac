@@ -2,6 +2,14 @@
 
 Check if this is an iOS app executed on a mac. Use this package if you want to know if someone uses your iOS flutter app on a mac (with silicon M1 / M2 chip).
 
+## Installation
+
+Just add the package to your `pubspec.yaml` file:
+    
+    flutter_is_ios_app_on_mac: ^1.0.0
+
+After running `flutter pub get`, the plugin should be ready to use.
+
 ## Usage
 
 There is only one function in the whole package: 
